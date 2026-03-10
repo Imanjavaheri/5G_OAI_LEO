@@ -53,3 +53,11 @@ iperf3 -c 192.168.70.135 -B 10.0.0.24 -C reno -t 20 >> /home/antlab/my_data.txt
 echo "=== TCP BBR TEST ===" >> /home/antlab/my_data.txt
 iperf3 -c 192.168.70.135 -B 10.0.0.24 -C bbr -t 20 >> /home/antlab/my_data.txt
 ```
+
+Just run this command from your terminal:
+
+```bash
+python3 /home/antlab/plot_tcp.py
+```
+
+It will parse both your .txt files and output a single, high-resolution image file named `tcp_satellite_results.png` right there.
